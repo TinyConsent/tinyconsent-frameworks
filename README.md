@@ -50,7 +50,7 @@ The guides in this repo show you exactly where to put this line for each framewo
 All integrations include:
 
 - ✅ **GDPR & CCPA compliance** - Blocks scripts until consent
-- ✅ **Google Consent Mode v2** - Automatic GA4/Google Ads integration
+- ✅ **Designed for Google Consent Mode v2** - Works with GA4-style implementations
 - ✅ **Lightweight** - Under 5KB initial load
 - ✅ **Customizable** - Via dashboard, no code changes
 - ✅ **Script blocking** - Prevents tracking before consent
