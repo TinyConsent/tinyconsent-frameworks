@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - My Website</title>
+  
+  <!-- TinyConsent Cookie Banner -->
+  <script src="https://scripts.tinyconsent.com/api/scripts/YOUR_SCRIPT_ID" async></script>
+  
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    h1 { color: #111; }
+    a { color: #0066cc; }
+    .policy-container {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+    .policy-embed {
+      width: 100%;
+      min-height: 800px;
+      border: none;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Home</a> |
+      <a href="/about.html">About</a> |
+      <a href="/privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Privacy Policy</h1>
+    
+    <div class="policy-container">
+      <!-- 
+        Embed your TinyConsent privacy policy
+        Replace YOUR_POLICY_ID with your actual policy ID
+        Generate at: https://tinyconsent.com/privacy-policy-generator
+      -->
+      <iframe 
+        src="https://tinyconsent.com/api/privacy-policies/YOUR_POLICY_ID/display"
+        class="policy-embed"
+        title="Privacy Policy"
+      ></iframe>
+    </div>
+  </main>
+  
+  <footer>
+    <p>
+      <a href="/">Back to Home</a> |
+      Privacy policy generated with <a href="https://tinyconsent.com/privacy-policy-generator">TinyConsent</a>
+    </p>
+  </footer>
+</body>
+</html>
+

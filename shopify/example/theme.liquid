@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <!-- 
+      TinyConsent Cookie Banner
+      Replace YOUR_SCRIPT_ID with your actual script ID
+      Get yours at: https://tinyconsent.com
+      Full guide: https://tinyconsent.com/cookie-banner-for-shopify
+    -->
+    <script src="https://scripts.tinyconsent.com/api/scripts/YOUR_SCRIPT_ID" async></script>
+    
+    <title>{{ page_title }}</title>
+    
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+    
+    <link rel="canonical" href="{{ canonical_url }}">
+    
+    {{ content_for_header }}
+    
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
+  </head>
+
+  <body>
+    {{ content_for_layout }}
+    
+    <footer>
+      <nav>
+        <!-- 
+          Link to your TinyConsent privacy policy
+          Replace YOUR_POLICY_ID with your actual policy ID
+          Generate at: https://tinyconsent.com/privacy-policy-generator
+        -->
+        <a href="https://tinyconsent.com/api/privacy-policies/YOUR_POLICY_ID/display">
+          Privacy Policy
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>
+
